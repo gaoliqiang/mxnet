@@ -63,7 +63,7 @@ struct OpContext {
 
 /*!
  * \brief Operator interface.
- *  Operator defins basic operation unit of optimized computation graph in mxnet.
+ *  Operator defines basic operation unit of optimized computation graph in mxnet.
  *  This interface relies on pre-allocated memory in TBlob, the caller need to set
  *  the memory region in TBlob correctly before calling Forward and Backward.
  *
@@ -102,7 +102,7 @@ class Operator {
    * \param out_data array of output data, pointer is used to indicate that this is holder
    *        the space of TBlob in out_data must be pre-allocated with InferShape
    * \param aux_states Auxiliary states of operator. Normally operator doesn't
-   *        need, epecial case like Batch Norm requires.
+   *        need, special case like Batch Norm requires.
    * \sa OpReqType, OpContext
    */
   virtual void Forward(const OpContext &ctx,
