@@ -239,7 +239,7 @@ class Symbol {
   static Symbol CreateVariable(const std::string &name);
 
  protected:
-  // Decalre node, internal data structure.
+  // Declare node, internal data structure.
   struct Node;
   /*! \brief an entry that represents output data from a node */
   struct DataEntry {
@@ -322,7 +322,7 @@ class Executor {
    *  This must be called after Forward.
    *  After this operation, NDArrays specified by grad_in_args_store will be updated accordingly.
    *  User is allowed to pass in an empty Array if the head node is
-   *  loss function and head gradeitn is not needed.
+   *  loss function and head gradient is not needed.
    *
    * \param head_grads the gradient of head nodes to be backproped.
    */
